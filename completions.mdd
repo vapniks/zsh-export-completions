@@ -1,0 +1,9 @@
+name=zsh/completions
+link=dynamic
+load=no
+
+moddeps="zsh/complete zsh/zle"
+
+autofeatures="C:ex c:len p:exint p:exstr p:exarr f:sum f:length"
+
+objects="completions.o"
