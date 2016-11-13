@@ -1,0 +1,20 @@
+* zsh-export-completions
+zsh module to export completions and corresponding descriptions into parameters
+The motivation for this module is to create a completion widget using the [[https://github.com/zsh-users/zaw][zaw]] plugin that would allow matching on both completions and their descriptions.
+
+** Building
+To build the module, 
+ 1) place completions.c and completions.mdd in the Src/Zle subdirectory of the zsh repository
+ 2) run configure in the toplevel dir: ./configure --prefix=/path/to/zsh-source-dir --enable-zsh-debug
+    (add --enable-zsh-debug if you are debugging the code)
+ 3) make clean
+ 4) Edit config.modules in the toplevel directory and add the following line:
+     name=zsh/completions modfile=Src/Zle/completions.mdd link=dynamic auto=yes load=no
+ 5) make prep
+ 6) make
+
+To rebuild the module after making a few changes do "make clean" followed by "make"
+
+** TODO
+ - obtain the completions and descriptions
+ - export them as parameter(s)
