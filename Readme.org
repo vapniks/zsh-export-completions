@@ -18,3 +18,5 @@ To rebuild the module after making a few changes do "make clean" followed by "ma
 ** TODO Things to do
  - obtain the completions and descriptions
  - export them as parameter(s)
+
+NOTE: Vincent Breitmoser has a working method for capturing completions without the use of any extra modules: https://github.com/Valodim/zsh-capture-completion
