@@ -1,3 +1,5 @@
+NOTE: THIS CODE IS NOT CURRENTLY USABLE, A WORKING ALTERNATIVE EXISTS, SEE BELOW.
+
 * zsh-export-completions
 zsh module to export completions and corresponding descriptions into parameters
 The motivation for this module is to create a completion widget using the [[https://github.com/zsh-users/zaw][zaw]] plugin that would allow matching on both completions and their descriptions.
